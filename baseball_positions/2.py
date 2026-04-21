@@ -1,12 +1,8 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-position = pd.read_csv("baseball_positions.csv")
-
-
-
-# Create DataFrame
-df = pd.DataFrame(data, columns=["Name", "Team", "Position"])
+# Read CSV مباشرة
+df = pd.read_csv("baseball_positions.csv")
 
 # Split multiple positions
 df["Position"] = df["Position"].str.split("/")
